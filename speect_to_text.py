@@ -35,7 +35,7 @@ class Converter:
             #Start = offset end = duration
             while i <= seconds:
                 # add audio chunks to list
-                audio.append(r.record(source,offset = i, duration = (i+10)))
+                audio.append(r.record(source, duration = 10))
                 i+=20
                 
         try:
